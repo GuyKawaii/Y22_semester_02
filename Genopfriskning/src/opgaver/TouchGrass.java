@@ -1,6 +1,5 @@
 package opgaver;
 
-import java.awt.*;
 import java.util.Scanner;
 
 public class TouchGrass {
@@ -16,8 +15,8 @@ public class TouchGrass {
       System.out.println("max grass height?");
       maxGrassHeight = Double.parseDouble(scanner.nextLine());
       
-      System.out.printf("there are %s days until the grass has to be cut%n",
-          Math.ceil((maxGrassHeight-currentGrassHeight)/0.8));
+      System.out.printf("there are %d. days until the grass has to be cut%n",
+          (int) Math.floor((maxGrassHeight-currentGrassHeight)/0.8));
       
     } while (true);
   }

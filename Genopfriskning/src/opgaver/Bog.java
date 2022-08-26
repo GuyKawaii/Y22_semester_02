@@ -1,6 +1,6 @@
 package opgaver;
 
-public class Bog {
+public class Bog{
   private int ISBN;
   private String title;
   private int releaseYear;
@@ -39,4 +39,5 @@ public class Bog {
   public String toString() {
     return String.format("%s %s %S", ISBN, title, releaseYear);
   }
+  
 }
