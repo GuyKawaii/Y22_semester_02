@@ -4,35 +4,41 @@ import java.util.Scanner;
 
 public class Controller {
 
-    public static void run(){
+    public static void run() {
         ArrayList<PostInfo> postInfos = new ArrayList<>();
+        Scanner input = new Scanner(System.in);
+        // System.out.println(postInfos);
 
+        // postInfos.add(new PostInfo("postNummer", "by"));
+
+        // load csv
         try {
-            Scanner fileScan = new Scanner(new File("C:\\Users\\DHI-LAP\\IdeaProjects\\Postnummer\\src\\liste.csv"));
-            fileScan.useDelimiter("\t|\n");
+            Scanner file = new Scanner(new File("src/liste.csv"));
+            file.useDelimiter(";|\n");
 
-            while (fileScan.hasNext()){
-                String postNummer = fileScan.next();
-                String by = fileScan.next();
+            while (file.hasNext()) {
+                String postNummer = file.next();
+                String by = file.next();
 
-                postInfos.add(new PostInfo(postNummer,by));
+                postInfos.add(new PostInfo(postNummer, by));
             }
 
-        } catch (Exception e){
-
+        } catch (Exception e) {
+            System.out.println(e);
         }
 
-        Scanner input = new Scanner(System.in);
-
-        System.out.println("Enter postnummer:");
-
+        System.out.print("Enter postnummer:");
         String postNummerInput = input.nextLine();
 
         for (int i = 0; i < postInfos.size(); i++) {
-            if (postInfos.get(i).getPostNummer().equals(postNummerInput)){
-                System.out.println(i+1);
+            if (postInfos.get(i).getPostNummer().equals(postNummerInput)) {
+                System.out.println(i + 1);
                 System.out.println(postInfos.get(i).getBy());
+            }
         }
-        }
+    }
+
+    public static void main(String[] args) {
+        Controller.run();
     }
 }

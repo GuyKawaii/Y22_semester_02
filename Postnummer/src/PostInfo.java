@@ -23,12 +23,4 @@ public class PostInfo {
     public void setBy(String by) {
         this.by = by;
     }
-
-    @Override
-    public String toString() {
-        return "Postnummer{" +
-                "postNummer=" + postNummer +
-                ", by='" + by + '\'' +
-                '}';
-    }
 }
