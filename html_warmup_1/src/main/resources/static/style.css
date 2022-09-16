@@ -1,0 +1,36 @@
+body {
+    background-color: deeppink;
+    color: white;
+    font-family: "Comic Sans MS";
+}
+
+h1 {
+    background-color: coral;
+    color: aqua;
+
+}
+
+a {
+    color: blueviolet;
+}
+
+#container_all {
+    border: solid 2px white;
+    horiz-align: center;
+    width: 1024px;
+    margin: 0px auto;
+
+}
+
+img {
+    border: solid 2px white;
+}
+
+b {
+    color: yellow;
+}
+
+#div_sonic {
+    border: solid 2px white;
+    text-align: right;
+}

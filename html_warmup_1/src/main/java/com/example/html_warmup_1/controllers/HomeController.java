@@ -17,4 +17,9 @@ public class HomeController {
         return "ex2";
     }
 
+    @GetMapping("/hit")
+    public String hit() {
+        return "hit";
+    }
+
 }
