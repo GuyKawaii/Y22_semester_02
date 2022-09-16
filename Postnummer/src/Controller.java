@@ -7,9 +7,6 @@ public class Controller {
     public static void run() {
         ArrayList<PostInfo> postInfos = new ArrayList<>();
         Scanner input = new Scanner(System.in);
-        // System.out.println(postInfos);
-
-        // postInfos.add(new PostInfo("postNummer", "by"));
 
         // load csv
         try {
