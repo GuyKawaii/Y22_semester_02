@@ -22,4 +22,9 @@ public class HomeController {
         return "hit";
     }
 
+    @GetMapping("/doc")
+    public String doc() {
+        return "doc";
+    }
+
 }
