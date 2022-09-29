@@ -14,7 +14,7 @@ public class MovieRepository {
     public void generateMoviesList() {
         // add movie obj from csv
         try {
-            Scanner input = new Scanner(new File("C:\\Users\\danie\\OneDrive\\KEA\\IdeaProjects\\Y22_semester_02\\Movieworkshop\\src\\main\\resources\\movie.csv"));
+            Scanner input = new Scanner(new File("src/main/resources/movie.csv"));
             input.useDelimiter(";");
 
             // skip header
