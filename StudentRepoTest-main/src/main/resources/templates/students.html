@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>STUDENTS</h1>
+<table>
+<!--    header -->
+    <tr>
+        <th class="tableHeader" style="text-align: left">ID</th>
+        <th class="tableHeader" style="text-align: left">NAME</th>
+        <th class="tableHeader" style="text-align: left">EMAIL</th>
+        <th class="tableHeader" style="text-align: left">GENDER</th>
+    </tr>
+<!--    for each student-->
+    <tr th:each="student : ${studentList}">
+        <td th:text="${student.getId()}"></td>
+        <td th:text="${student.getName()}"></td>
+        <td th:text="${student.getEmail()}"></td>
+        <td th:text="${student.isGender()}"></td>
+    </tr>
+</table>
+
+
+</body>
+</html>

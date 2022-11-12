@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Soldier man up!</h1>
+<p th:text="${name}">NAME</p>
+<div th:text="${age}">AGE</div>
+
+<!-- iterate over all elements of a list-->
+<table>
+    <tr th:each="soldier : ${solders}">
+        <td th:text="${soldier}">NAME</td>
+        <td>NR:2</td>
+        <td>NR:3</td>
+        <td>NR:4</td>
+    </tr>
+</table>
+
+</body>
+</html>
